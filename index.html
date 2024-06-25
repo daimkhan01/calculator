@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" class="input" id="expression" placeholder="Enter expression..">
+            <div class="output" id="result">Result: </div>
+        </div>
+        <div class="buttons">
+            <!-- Calculator buttons -->
+            <button onclick="appendToExpression('cos(')">cos</button>
+            <button onclick="appendToExpression('tan(')">tan</button>
+            <button onclick="appendToExpression('sin(')">sin</button>
+            <button onclick="appendToExpression('sqrt(')">sqrt</button>
+            <button onclick="appendToExpression('(')">(</button>
+            <button onclick="appendToExpression(')')">)</button>
+            <button onclick="appendToExpression('^')">^</button>
+            <button onclick="appendToExpression('/')">/</button>
+            <button onclick="appendToExpression('7')">7</button>
+            <button onclick="appendToExpression('8')">8</button>
+            <button onclick="appendToExpression('9')">9</button>
+            <button onclick="appendToExpression('*')">*</button>
+            <button onclick="appendToExpression('4')">4</button>
+            <button onclick="appendToExpression('5')">5</button>
+            <button onclick="appendToExpression('6')">6</button>
+            <button onclick="appendToExpression('-')">-</button>
+            <button onclick="appendToExpression('1')">1</button>
+            <button onclick="appendToExpression('2')">2</button>
+            <button onclick="appendToExpression('3')">3</button>
+            <button onclick="appendToExpression('+')">+</button>
+            <button onclick="appendToExpression('0')">0</button>
+            <button onclick="appendToExpression('00')">00</button>
+            <button onclick="appendToExpression('000')">000</button>
+            <button onclick="appendToExpression('.')">.</button>
+            <button onclick="clearExpression()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="evaluateExpression()">=</button>
+        </div>
+        <div class="history" id="history">
+            <!-- History added here -->
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
